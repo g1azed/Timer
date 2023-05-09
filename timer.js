@@ -81,7 +81,7 @@ function updateInputs(totalSeconds){
 startBtn.addEventListener('click',()=>{
     input.forEach((el)=>{
         el.setAttribute("disabled","disabled");
-        if(el.value===''){
+        if(el.value=== ''){
             parseInt(el.value='00')
         }
     })

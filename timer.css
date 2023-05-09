@@ -46,7 +46,8 @@ body{
     color: #fff;
     margin-top: 48px;
     position: relative;
-
+    font-size: 24px;
+    font-weight: bold;
 }
 .title::after{
     content: '';
@@ -58,10 +59,21 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
+.title::before{
+    content: '';
+    width: 312px;
+    height: 1px;
+    background-color: #5B75B4;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .main{
     display: flex;
     gap: 22px;
     margin-top: 32px;
+    padding-top: 33px;
 }
 .time_box{
     display: flex;
@@ -125,7 +137,7 @@ input[type="number"]::-webkit-inner-spin-button {
     background: #324577;
     box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.05);
     color: #617199;
-    font-family: Pretendard-Bold;
+    font-family: 'Pretendard-Bold';
     padding-left: 20px;
 }
 
@@ -146,8 +158,7 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 16px;
     position: absolute;
     left: 20%;
-}   
-
+} 
 .start.able{
     background-color: #5180FF;
     color: #fff;
